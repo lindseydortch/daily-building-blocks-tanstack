@@ -1,0 +1,202 @@
+{
+  "date": "2026-05-11",
+  "dayOfWeek": "Monday",
+  "tasks": [
+    {
+      "id": "task-001",
+      "name": "Client Work",
+      "goalMinutes": 60,
+      "loggedMinutes": 0,
+      "status": "not_started",
+      "category": "work",
+      "isTrueDaily": false,
+      "canStack": true,
+      "notes": ""
+    },
+    {
+      "id": "task-002",
+      "name": "Morning Pages",
+      "goalMinutes": 30,
+      "loggedMinutes": 0,
+      "status": "not_started",
+      "category": "personal",
+      "isTrueDaily": false,
+      "canStack": true,
+      "notes": ""
+    },
+    {
+      "id": "task-003",
+      "name": "TAW Work",
+      "goalMinutes": 15,
+      "loggedMinutes": 0,
+      "status": "not_started",
+      "category": "personal",
+      "isTrueDaily": false,
+      "canStack": true,
+      "notes": ""
+    },
+    {
+      "id": "task-004",
+      "name": "Read",
+      "goalMinutes": 15,
+      "loggedMinutes": 0,
+      "status": "not_started",
+      "category": "personal",
+      "isTrueDaily": true,
+      "canStack": false,
+      "notes": "Kindle streak — cannot roll to another day"
+    },
+    {
+      "id": "task-005",
+      "name": "Italian",
+      "goalMinutes": 10,
+      "loggedMinutes": 0,
+      "status": "not_started",
+      "category": "personal",
+      "isTrueDaily": false,
+      "canStack": true,
+      "notes": ""
+    },
+    {
+      "id": "task-006",
+      "name": "Louis Walk",
+      "goalMinutes": 10,
+      "loggedMinutes": 0,
+      "status": "not_started",
+      "category": "personal",
+      "isTrueDaily": false,
+      "canStack": true,
+      "notes": ""
+    },
+    {
+      "id": "task-007",
+      "name": "Guitar",
+      "goalMinutes": 10,
+      "loggedMinutes": 0,
+      "status": "not_started",
+      "category": "personal",
+      "isTrueDaily": false,
+      "canStack": true,
+      "notes": ""
+    },
+    {
+      "id": "task-008",
+      "name": "Workout-Stretch-Rollout",
+      "goalMinutes": 50,
+      "loggedMinutes": 0,
+      "status": "not_started",
+      "category": "health",
+      "isTrueDaily": true,
+      "canStack": false,
+      "notes": "30 min workout + 10 min stretch + 10 min rollout"
+    },
+    {
+      "id": "task-009",
+      "name": "12,000 Steps",
+      "goalMinutes": null,
+      "goalUnit": "steps",
+      "goalAmount": 12000,
+      "loggedAmount": 0,
+      "status": "not_started",
+      "category": "health",
+      "isTrueDaily": true,
+      "canStack": false,
+      "notes": "One day a week can be 6,000 steps, preferably Sunday"
+    },
+    {
+      "id": "task-010",
+      "name": "Water",
+      "goalMinutes": null,
+      "goalUnit": "liters",
+      "goalAmount": 2,
+      "loggedAmount": 0,
+      "status": "not_started",
+      "category": "health",
+      "isTrueDaily": true,
+      "canStack": false,
+      "notes": ""
+    },
+    {
+      "id": "task-011",
+      "name": "Job Search",
+      "goalMinutes": 120,
+      "loggedMinutes": 0,
+      "status": "not_started",
+      "category": "job_search",
+      "isTrueDaily": false,
+      "canStack": true,
+      "notes": "Includes: Applying, People Sourcing, HM Sourcing, Tailoring Resume"
+    },
+    {
+      "id": "task-012",
+      "name": "eStump",
+      "goalMinutes": 120,
+      "loggedMinutes": 0,
+      "status": "not_started",
+      "category": "client",
+      "isTrueDaily": false,
+      "canStack": true,
+      "notes": "Client project"
+    },
+    {
+      "id": "task-013",
+      "name": "AI Book",
+      "goalMinutes": 60,
+      "loggedMinutes": 0,
+      "status": "not_started",
+      "category": "learning",
+      "isTrueDaily": false,
+      "canStack": true,
+      "notes": ""
+    },
+    {
+      "id": "task-014",
+      "name": "Assets Work",
+      "goalMinutes": 60,
+      "loggedMinutes": 0,
+      "status": "not_started",
+      "category": "job_search",
+      "isTrueDaily": false,
+      "canStack": true,
+      "notes": "Time to update or create any assets"
+    },
+    {
+      "id": "task-015",
+      "name": "LinkedIn Engagement",
+      "goalMinutes": 15,
+      "loggedMinutes": 0,
+      "status": "not_started",
+      "category": "job_search",
+      "isTrueDaily": false,
+      "canStack": true,
+      "notes": "Weekdays only"
+    },
+    {
+      "id": "task-016",
+      "name": "LinkedIn Post Content",
+      "goalMinutes": 15,
+      "loggedMinutes": 0,
+      "status": "not_started",
+      "category": "job_search",
+      "isTrueDaily": false,
+      "canStack": true,
+      "notes": ""
+    }
+  ],
+  "stackBank": {
+    "availableMinutes": 0,
+    "carriedFromDate": null
+  },
+  "schemaNotes": {
+    "statusValues": ["not_started", "in_progress", "complete", "overflow"],
+    "statusRules": {
+      "not_started": "loggedMinutes === 0",
+      "in_progress": "loggedMinutes > 0 && loggedMinutes < goalMinutes",
+      "complete": "loggedMinutes === goalMinutes",
+      "overflow": "loggedMinutes > goalMinutes (surplus can roll to stackBank for stackable tasks)"
+    },
+    "categories": ["work", "personal", "health", "job_search", "client", "learning"],
+    "trueDailyTasks": "Tasks where isTrueDaily=true cannot roll to another day. Currently: Read, Workout-Stretch-Rollout, 12,000 Steps, Water",
+    "unitNote": "Most tasks track minutes. Steps and Water use goalAmount/loggedAmount with goalUnit instead."
+  }
+}

@@ -1,0 +1,43 @@
+// COLORS
+$deep-brick: #8c3a2e;
+$honey: #d9a55c;
+$sand: #f5e6d8;
+$sage: #8fa68e;
+$espresso: #3d3833;
+
+// FONTS
+$lora: 'Lora', serif;
+$nunito: 'Nunito', sans-serif;
+
+// OTHER
+
+// RESPONSIVE BREAKPOINTS
+$bp-laptopL: 90em; // 1440px
+$bp-laptop: 64em; // 1024px
+$bp-tablet: 48em; // 768px
+$bp-mobileL: 35.9375em; // 575px
+$bp-mobileM: 23.4375em; // 375px
+$bp-mobileS: 20em; // 320px
+
+@mixin glassmorphism($blur, $saturate, $rgba) {
+  backdrop-filter: blur($blur) saturate($saturate);
+  background-color: $rgba;
+}
+
+// @mixin font-responsiveness() {
+//   @media only screen and (max-width: $bp-xl) {
+//     font-size: 2rem;
+//   }
+
+//   @media only screen and (max-width: $bp-med) {
+//     font-size: 1.8rem;
+//   }
+
+//   @media only screen and (max-width: $bp-small) {
+//     font-size: 1.6rem;
+//   }
+
+//   @media only screen and (max-width: $bp-xs) {
+//     font-size: 1.4rem;
+//   }
+// }
