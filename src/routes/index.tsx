@@ -16,8 +16,6 @@ export const Route = createFileRoute('/')({
 function Home() {
   const { labels, blocks } = Route.useLoaderData();
 
-  // console.log(labels);
-
   return (
     <section className="">
       <Card labels={labels} blocks={blocks} />

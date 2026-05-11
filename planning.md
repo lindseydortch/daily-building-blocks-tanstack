@@ -8,10 +8,10 @@
 
 - Build the page shell. Sand background, the header with date + "Today's blocks" + the "X of 16 stacked" line. Hardcode the values for now. Done when: the header looks right on its own with no tasks below it.
   - TSX ✅
-  - CSS
+  - CSS ✅
 - Build the labels component, loop through the labels with their associated color
   - TSX ✅
-  - CSS
+  - CSS ✅
 - Build a single TaskCard component — not started state only. Take one task from the JSON and render it as the white rounded card. Status circle, name, "0 / 15 min" line, the + button, the 3px bottom progress bar at 0%. Done when: one card renders and looks like the mockup.
   - TSX ✅
   - CSS

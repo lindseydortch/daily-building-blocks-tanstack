@@ -17,5 +17,6 @@ export const fetchBlocks = createServerFn().handler(async () => {
 
   // const blocks = await res.json();
 
-  return data.blocks;
+  // TODO: turn off slice once functionality for show more is working
+  return data.blocks.slice(0, 5);
 });
