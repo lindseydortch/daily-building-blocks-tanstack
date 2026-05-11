@@ -1,0 +1,45 @@
+{
+  "labels": [
+    {
+      "id": "lbl-001",
+      "name": "Personal Growth",
+      "color": "sage",
+      "hex": "#8FA68E"
+    },
+    {
+      "id": "lbl-002",
+      "name": "Job Search",
+      "color": "brick",
+      "hex": "#8C3A2E"
+    },
+    {
+      "id": "lbl-003",
+      "name": "Health",
+      "color": "purple",
+      "hex": "#6B4A8A"
+    },
+    {
+      "id": "lbl-004",
+      "name": "Client",
+      "color": "teal",
+      "hex": "#4A7A8C"
+    },
+    {
+      "id": "lbl-005",
+      "name": "Learning",
+      "color": "tan",
+      "hex": "#B8956A"
+    },
+    {
+      "id": "lbl-006",
+      "name": "Family",
+      "color": "rose",
+      "hex": "#C97B7B"
+    }
+  ],
+  "schemaNotes": {
+    "color": "Semantic name from your design system tokens (sage, brick, etc.). Use this in code rather than the raw hex when possible.",
+    "hex": "Stored alongside for fallback / quick reference. Single source of truth should be your CSS tokens.",
+    "futureFields": "Eventually may add: createdAt, archived, sortOrder"
+  }
+}

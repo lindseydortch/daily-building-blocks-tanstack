@@ -1,14 +1,26 @@
-import { createFileRoute } from '@tanstack/react-router'
+import Card from '#/components/card/Card';
+import { fetchBlocks } from '#/utils/blocks';
+import { fetchLabels } from '#/utils/labels';
+import { createFileRoute } from '@tanstack/react-router';
 
-export const Route = createFileRoute('/')({ component: Home })
+export const Route = createFileRoute('/')({
+  loader: async () => {
+    const labels = await fetchLabels();
+    const blocks = await fetchBlocks();
+
+    return { labels, blocks };
+  },
+  component: Home,
+});
 
 function Home() {
+  const { labels, blocks } = Route.useLoaderData();
+
+  // console.log(labels);
+
   return (
-    <div className="p-8">
-      <h1 className="text-4xl font-bold">Welcome to TanStack Start</h1>
-      <p className="mt-4 text-lg">
-        Edit <code>src/routes/index.tsx</code> to get started...
-      </p>
-    </div>
-  )
+    <section className="">
+      <Card labels={labels} blocks={blocks} />
+    </section>
+  );
 }
