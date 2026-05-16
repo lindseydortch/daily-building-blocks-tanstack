@@ -12,13 +12,13 @@ export default function Card({ labels, blocks }) {
           <Label label={label} key={label.id} />
         ))}
       </div>
-      <div className="body">
-        <div className="blocks">
+      <div className={styles.body}>
+        <div className={styles.blocks}>
           {blocks?.map((block) => (
-            <Block block={block} key={block.id} />
+            <Block block={block} labels={labels} key={block.id} />
           ))}
         </div>
-        <div className="show-more">
+        <div className={styles.showMore}>
           <p>Show 9 more...</p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 .card {
-  padding: 4rem;
+  padding: 2.5rem 3rem;
   background-color: $sand;
   border-radius: 2rem;
 }
@@ -10,4 +10,29 @@
   flex-wrap: wrap;
   gap: 0.5rem 1rem;
   margin-top: 1rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+
+  background-color: rgba(white, 0.5);
+}
+
+.body {
+  margin-top: 1.5rem;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+
+  margin-bottom: 2rem;
+}
+
+.showMore {
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.2rem;
+
+  cursor: pointer;
 }

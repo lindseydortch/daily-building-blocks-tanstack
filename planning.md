@@ -14,9 +14,9 @@
   - CSS ✅
 - Build a single TaskCard component — not started state only. Take one task from the JSON and render it as the white rounded card. Status circle, name, "0 / 15 min" line, the + button, the 3px bottom progress bar at 0%. Done when: one card renders and looks like the mockup.
   - TSX ✅
-  - CSS
+  - CSS ✅
 - Render all states from props, no interactions yet. Make the card handle all four states (not started, in progress, complete, overflow) based on the loggedMinutes and goalMinutes props. Manually edit the JSON to test each state. The status circle, progress bar fill, and color changes should all derive from the data. Done when: you can change any task's loggedMinutes in the JSON and the card updates correctly.
-- Render the full list. Map over the tasks array, render a TaskCard for each. Done when: all 16 tasks show up as a scrollable list and look right on mobile width.
+- Render the full list. Map over the tasks array, render a TaskCard for each. Done when: all 16 tasks show up as a scrollable list.
 
 ## Block C — The log interaction (2 sittings)
 
